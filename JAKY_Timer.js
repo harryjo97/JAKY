@@ -14,10 +14,11 @@ function timer(){
 
         var options = {
           title: 'Timer',
-          backgroundColor: 'white',
           colors: ['white','red'],
           legend: 'none',
-          pieSliceText: 'none'
+          pieSliceText: 'none',
+          pieSliceBorderColor: 'black',
+
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
