@@ -1,25 +1,27 @@
 <html>
   <head>
-        <script src="https://www.gstatic.com/charts/loader.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="semantic/dist/semantic.min.js"></script> -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="./JAKY_Timer.css">
   </head>
   <body>
-    <div>
-    <button class="ui primary button" id="clear" onclick="clearTimer()">
-      Clear
-    </button>
-    <button class="ui primary button" id="restart" onclick="">
-      Restart
-    </button>
-      </div>
-    <div class="ui right labeled input">
-      <label for="amount" class="ui label">$</label>
-      <input type="text" placeholder="Amount" id="amount">
-      <div class="ui basic label">.00</div>
+    <div id="timer_body">
+        <div id="buttons">
+            <button class="ui primary button" id="start">
+              Start
+            </button>
+            <button class="ui primary button" id="stop">
+                Stop
+            </button>
+            <button class="ui primary button" id="restart">
+                Restart
+            </button>
+          </div>
+          <div class="ui right labeled input" id="input">
+            <label><img src="./clock2.png" id="clock"></label>
+            <input type="text" placeholder="Time (min)" id="time_input">
+          </div>
+          <div id="piechart"></div>
     </div>
-    <div id="piechart" style="width: 900px; height: 500px;"></div>
 
     <script src="./JAKY_Timer.js"></script>
   </body>

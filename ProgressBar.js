@@ -1,9 +1,9 @@
 var T=10000;
+var tbar = document.getElementById("TBar"); 
+var tpointer = document.getElementById("TPointer");
+
 function moveTBar() {
-  var tbar = document.getElementById("TBar"); 
-  var tpointer = document.getElementById("TPointer");
-  
-  var width = 1;
+  var width = 0;
   var id = setInterval(frame, 10);
   function frame() {
     if (width >= 100) {
